@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "package.json file",
   "license": "ISC",
-  "author": "",
+  "author": "Lucas Gray",
   "type": "commonjs",
   "main": "index.js",
   "scripts": {
