@@ -146,7 +146,13 @@
             </tr>
             <tr>
               <td>4/09/2026</td>
-              <td><a href="https://docs.google.com/presentation/d/1ugGB4hOLsXdCz6Z_K4mUodMcspw6kwNVaU2C7ETzmqc" target="_blank">Compensation Part 2</a></td>
+              <td>
+                <a
+                  href="https://docs.google.com/presentation/d/1ugGB4hOLsXdCz6Z_K4mUodMcspw6kwNVaU2C7ETzmqc"
+                  target="_blank"
+                  >Compensation Part 2</a
+                >
+              </td>
             </tr>
             <tr>
               <td>4/16/2026</td>
@@ -400,16 +406,19 @@
             </button>
             <div class="accordion-content">
               <p><strong>Due Date:</strong> 4/16/2026</p>
+              <p><strong>Submit this assignment as one or many spreadsheets directly in Canvas.</strong></p>
               <p>
-                You are going to calculate the total value that someone would have recieved from a theoretical 4 year
-                RSU grant at three real public companies. You'll combine the knowlege you gained this week along with
-                real stock data to calculate the actual end-value of a grant at Microsoft, Apple, and Nvidia.
+                You are going to calculate the total post-tax income that someone would have recieved from a theoretical
+                4 year RSU grant at three real public companies. You'll combine the knowlege you gained this week along
+                with real stock data to calculate the actual end-value of a grant at Microsoft, Apple, and Nvidia. For
+                each company, you'll calculate the total proceeds from the grant, and calculate the gain/loss compared
+                to the "expected proceeds" based on the $200,000 grant minus tax.
               </p>
               <p>
-                For each of these companies, assume that you got a $200,000 4 year RSU grant with a 1 year cliff on
-                January 1st, 2022. For the initial spot price (to calculate the total number of shares in the grant),
-                take the opening day price on your first day of work, January 3rd, 2022. Including the 1 year cliff, the
-                13 vest dates would be
+                For each of these companies, assume that you got a $200,000 4 year RSU grant with a 1 year cliff
+                starting on January 1st, 2022. For the initial spot price (to calculate the total number of shares in
+                the grant), take the opening day price on your first day of work, January 3rd, 2022. Including the 1
+                year cliff, the 13 vest dates would be:
               </p>
               <ul>
                 <li>January 1st, 2023</li>
@@ -427,32 +436,52 @@
                 <li>January 1st, 2026</li>
               </ul>
               <p>
-                Assume that each vest date, you sold at the opening price of the day. For each company, create a
-                spreadsheet that looks similar to the tables in todays slides, but with a row for each vest date. Use
-                the following rules for the calculation: For taxes, assume a fixed 25% tax rate and that we'll see 0
-                short term capital gains. Ignore any fractional shares and truncate decimals in share calculations
-                (round down).
+                Assume that each vest date you sold at the opening price of the day. For each company, create a
+                spreadsheet that looks similar to the tables in todays slides, but with a row for each individual vest
+                date. Use the following rules for the calculation:
               </p>
               <ul>
-                <li>Assume a fixed 25% tax rate on your vested shares</li>
-                <li>Truncate any decimals in the number of shares vested</li>
                 <li>
-                  Use the next closes day to the vest date on market open in case a vest date falls on a weekend or
+                  Assume a fixed 25% tax rate on your vested shares that the company sells-to-cover for you
+                  automatically at vest
+                </li>
+                <li>Truncate any decimals in the number of shares vested and always round down</li>
+                <li>
+                  Use the next closest day to the vest date on market open in case a vest date falls on a weekend or
                   holiday
                 </li>
               </ul>
+              <p>You can use the following links for historical data for each stock:</p>
+              <ul>
+                <li>
+                  <a
+                    href="https://finance.yahoo.com/quote/AAPL/history/?period1=1640995200&period2=1767398400"
+                    target="_blank"
+                    >Apple</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="https://finance.yahoo.com/quote/MSFT/history/?period1=1640995200&period2=1767398400"
+                    target="_blank"
+                    >Microsoft</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="https://finance.yahoo.com/quote/NVDA/history/?period1=1640995200&period2=1767398400"
+                    target="_blank"
+                    >Nvidia</a
+                  >
+                </li>
+              </ul>
               <p>
-                Use the following links for historical data for each stock:
-                <ul>
-                  <li><a href="https://finance.yahoo.com/quote/AAPL/history/?period1=1640995200&period2=1767398400" target="_blank">Apple</a></li>
-                  <li><a href="https://finance.yahoo.com/quote/MSFT/history/?period1=1640995200&period2=1767398400" target="_blank">Microsoft</a></li>
-                  <li><a href="https://finance.yahoo.com/quote/NVDA/history/?period1=1640995200&period2=1767398400" target="_blank">Nvidia</a></li>
-                </ul>
+                As an example, here's a table showing the values in this scenario if you had gotten this offer at
+                Netflix:
               </p>
-              <p>As an example, here's a table showing the values for Netflix:</p>
               <hr />
-              <p>Spot price of $NFLX on January 3rd, 2022: $60.56</p>
-              <p>Total shares in grant: 3,302 (round down)</p>
+              <p>Opening day price of $NFLX on January 3rd, 2022: $60.56 (spot price)</p>
+              <p>Total shares in grant: 3,302 (floor of 3,302.51 shares)</p>
               <table>
                 <thead>
                   <tr>
@@ -543,8 +572,9 @@
                   </tr>
                 </tbody>
               </table>
-              <p>Total proceeds: $155,982.91</p>
-              <p>Expected proceeds: $149,976.84</p>
+              <p><strong>Total proceeds:</strong> $155,982.91</p>
+              <p><strong>Expected proceeds (based on $200K grant minus tax):</strong> $149,976.84</p>
+              <p><strong>Gain/loss:</strong> $6,006.07</p>
             </div>
           </div>
         </div>
